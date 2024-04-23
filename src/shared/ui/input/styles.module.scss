@@ -1,0 +1,92 @@
+.inputWrapper {
+  margin: 35px 0 0 0;
+  padding: 0;
+  position: relative;
+  width: 100%;
+  background-color: var(--white-color);
+  border: none;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  transition: border 1s ease;
+
+  &.valid {
+    border: 1px solid rgba(0, 168, 204, 1);
+  }
+
+  &.noValid {
+    border: 1px solid rgba(255, 100, 100, 1);
+  }
+}
+
+.inputLabel {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: -25px;
+  left: 10px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23.5px;
+  transition:
+    top 0.5s ease,
+    left 0.5s ease,
+    font-size 0.5s ease;
+  z-index: 3;
+
+  &.required::after {
+    margin-left: 5px;
+    content: '*';
+    color: var(--orange-color);
+  }
+}
+
+.input {
+  margin: 0;
+  padding: 0 20px;
+  min-width: 85%;
+  min-height: 50px;
+  position: relative;
+  outline: none;
+  border: none;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23.5px;
+  background-color: transparent;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.inputError {
+  margin-top: 10px;
+  padding: 0;
+  min-height: 25px;
+  color: var(--orange-color);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23.5px;
+}
+
+.inputButton {
+  margin: 0;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    border-radius: 50%;
+    background-color: var(--slate-color);
+  }
+}

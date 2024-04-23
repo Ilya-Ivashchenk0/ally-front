@@ -1,0 +1,38 @@
+.form {
+  margin: 0;
+  padding: 20px 30px;
+  min-width: 420px;
+  background-color: var(--blue-slate-color);
+  border: 2px solid rgba(0, 168, 204, 1);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 20px 0px rgba(0, 168, 204, 0.3) inset;
+}
+
+.formButton {
+  margin: 20px 0;
+  padding: 5px 20px;
+  color: var(--white-color);
+  background-color: var(--orange-color);
+  border: none;
+  border-radius: 2px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 29.38px;
+  opacity: 0.3;
+  cursor: default;
+
+  &.active {
+    opacity: 1;
+    cursor: pointer;
+  }
+}
+
+.formHeading {
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+}

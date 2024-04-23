@@ -1,0 +1,27 @@
+:root {
+  --black-color: rgba(0, 0, 0, 1);
+  --white-color: rgba(255, 255, 255, 1);
+  --dark-color: rgba(33, 36, 61, 1);
+  --dark-blue-color: rgba(20, 40, 80, 1);
+  --orange-color: rgba(255, 100, 100, 1);
+  --blue-color: rgba(0, 168, 204, 1);
+  --blue-slate-color: rgba(237, 247, 250, 1);
+  --slate-color: rgba(134, 149, 164, 1);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--white-color);
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
