@@ -38,13 +38,13 @@ const Input: ForwardRefExoticComponent<typeInputProps> = forwardRef<
   return (
     <>
       <div className={cn(className, classes.inputWrapper)}>
-        <label className={cn(className, classes.inputLabel)} htmlFor={name}>
+        <label className={cn(className, classes.inputLabel, {
+            [classes.required]: true
+          })} htmlFor={name}>
           {label}
         </label>
         <input
-          className={cn(className, classes.input, {
-            [classes.required]: required
-          })}
+          className={cn(className, classes.input)}
           id={name}
           name={name}
           value={value}
